@@ -1,10 +1,9 @@
 create table TProduct(
 product_id VARCHAR(8),
-book_name VARCHAR(128),
-book_author VARCHAR(128),
-book_description VARCHAR(1024),
-book_price NUMBER,
-book_rating NUMBER
+product_name VARCHAR(128),
+product_description VARCHAR(1024),
+product_price NUMBER,
+product_rating NUMBER
 );
 
 create table TOrder(
