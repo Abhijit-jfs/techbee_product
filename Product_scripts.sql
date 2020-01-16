@@ -11,6 +11,7 @@ CREATE TABLE TORDER(
   PRODUCT_ID VARCHAR(8),
   CUSTOMER_ID VARCHAR(8),
   PRODUCT_QUANTITY NUMBER NOT NULL,
+  GIFT_WRAP VARCHAR(3) NOT NULL,
   DELIVERY_INSTRUCTIONS VARCHAR(512),
   DELIVERY_DATE NUMBER,
   CART_VALUE NUMBER NOT NULL,
@@ -29,11 +30,11 @@ INSERT INTO TPRODUCT VALUES('P008', 'How Google Works', 'Seasoned Google execs E
 INSERT INTO TPRODUCT VALUES('P009', 'Alibaba: The House That Jack Ma Built', 'An engrossing, insider’s account of how a teacher built one of the world’s most valuable companies.', 209, 4.9);
 INSERT INTO TPRODUCT VALUES('P010', 'Homo Deus', 'Describes a bleak future without sickness, hunger, and war', 199, 4.4);
 
-INSERT INTO TORDER VALUES('O001', 'P001', 'C001', 2, 'Gift wrap', 1, 169, 'FIRSTORDER');
-INSERT INTO TORDER VALUES('O002', 'P003', 'C002', 3, 'Please give hardcover books', 2, 1485, 'FIRSTORDER');
-INSERT INTO TORDER VALUES('O003', 'P005', 'C003', 1, 'Please deliver on the specified date!', 3, 379, '');
-INSERT INTO TORDER VALUES('O004', 'P007', 'C004', 4, 'Gift wrap', 2, 458, 'TECHBEE50');
-INSERT INTO TORDER VALUES('O005', 'P009', 'C005', 1, 'Gift wrap', 1, 209, '');
+INSERT INTO TORDER VALUES('O001', 'P001', 'C001', 2, 'True', 'Gift wrap', 1, 169, 'FIRSTORDER');
+INSERT INTO TORDER VALUES('O002', 'P003', 'C002', 3, 'False', 'Please give hardcover books', 2, 1485, 'FIRSTORDER');
+INSERT INTO TORDER VALUES('O003', 'P005', 'C003', 1, 'True', 'Please deliver on the specified date!', 3, 379, '');
+INSERT INTO TORDER VALUES('O004', 'P007', 'C004', 4, 'True', 'Gift wrap', 2, 458, 'TECHBEE50');
+INSERT INTO TORDER VALUES('O005', 'P009', 'C005', 1, 'True', 'Gift wrap', 1, 209, '');
 
 SELECT * FROM TPRODUCT;
 SELECT * FROM TORDER;
