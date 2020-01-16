@@ -1,0 +1,7 @@
+.checkout-container {
+    width: 40%;
+}
+
+.menu-right {
+    flex-direction: row-reverse;
+}
