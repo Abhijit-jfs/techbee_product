@@ -64,7 +64,7 @@
 									<div class="price-block">
 										<span class="price">&#8377;<%= product.getProductPrice() %></span>
 									</div>
-									<a href="checkout?productId=<%= product.getProductId() %>" class="btn btn-primary btn-sm" role="button" aria-disabled="true">Buy</a>
+									<a href="checkout.jsp?productId=<%= product.getProductId() %>" class="btn btn-primary btn-sm" role="button" aria-disabled="true">Buy</a>
 								</div>
 							</div>
 						</div>
